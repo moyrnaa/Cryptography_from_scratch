@@ -1,8 +1,7 @@
-# Cryptography_from_scratch
-# Caesar Cipher , It’s named after Julius Caesar ...
+# Caesar Cipher 
 
-- This is my Python implementation of the Caesar Cipher, one of the oldest and simplest encryption methods.
-- the Caesar cipher should only be used for fun because it is very easy to solve ...
+-This is my Python implementation of the Caesar Cipher, one of the oldest and simplest encryption methods.
+⚠️ Note: The Caesar Cipher is not secure and should only be used for educational purposes or fun, as it can be easily decrypted."
 
 ## What’s a Caesar Cipher?
 
@@ -24,3 +23,20 @@ For example:
 - **Shift**: 3
 - **Ciphertext**: "khoor"
 for more infos: https://en.wikipedia.org/wiki/Caesar_cipher
+
+## How to decrypt a Caesar cipher :
+To decrypt a Caesar cipher, find out how many steps the letters were shifted. 
+You can do this by looking for common letters or words in the encrypted text and comparing them to expected letters in the language.
+Once you find the shift, move each letter back by that many steps to get the original text.
+
+For example :
+Suppose you see the encrypted text: "Wklv lv d whvw"
+You notice that "lv" appears multiple times, which might be "is" in English.
+If "l" was shifted to "i" and "v" to "s", that means the shift is 3.
+Now, shift each letter back by 3:
+
+W → T, k → h, l → i, v → s → "This"
+l → i, v → s → "is"
+d → a → "a"
+w → t, h → e, v → s, w → t → "test"
+So, the decrypted message is: "This is a test".
