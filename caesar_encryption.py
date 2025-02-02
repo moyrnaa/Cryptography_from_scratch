@@ -1,9 +1,6 @@
 def ccipher(text, step): #ccipher stands for caesar cipher ...
     encrypted_text = []
 
-
-
-
     for char in text:
         if char.isupper():
             # Shift uppercase characters
@@ -18,7 +15,7 @@ def ccipher(text, step): #ccipher stands for caesar cipher ...
             encrypted_char = str((int(char) + step) % 10)  # Wrap around after 9
             encrypted_text.append(encrypted_char)
         else:
-            # Leave non alphabet and non-numeric characters unchanged
+            # Leave non alphabet and non numeric characters unchanged
             encrypted_text.append(char)
 
 
